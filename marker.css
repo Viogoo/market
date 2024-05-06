@@ -56,7 +56,7 @@ content {
     padding: 10px;
 
     background-color: #ffffff;
-   
+
     border: 1px solid rgb(194, 194, 194);
     border-radius: 5px;
     box-shadow: 0 0 7px rgba(0, 0, 0.3);
@@ -67,6 +67,63 @@ content {
 
 }
 
+.item-title {
+    height: 200px;
+}
+
+
+.price {
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+}
+
+.price div:first-child {
+    width: 100px;
+    font-size: 20px;
+}
+
+.price div:first-child span {
+    text-decoration-line: line-through;
+}
+
+.price div:first-child sup {
+    font-size: 12px;
+}
+
+.price div:last-child {
+    font-size: 24px;
+}
+
+.price div:last-child sup {
+    font-size: 14px;
+}
+
+.bonus {
+
+    background: rgb(253, 48, 48);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.bonus div:first-child {
+    width: 100px;
+    font-size: 14px;
+}
+
+.bonus div:last-child {
+    font-size: 24px;
+}
+
+.bonus div:last-child sup {
+    font-size: 14px;
+}
+
+
+
 .contacts p {
     margin: 3px;
 }
@@ -74,15 +131,15 @@ content {
 
 .contacts P:first-child {
     font-weight: bold;
-
+    letter-spacing: 1px;
 }
 
 .contacts P:last-child {
     border-left: 3px solid rgb(253, 48, 48);
-    ;
+    
 }
 
-.license {
+.info {
     font-size: 9px;
     text-align: justify;
     color: rgb(120, 120, 120);
