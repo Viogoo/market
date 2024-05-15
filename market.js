@@ -6,30 +6,61 @@ console.log('перевірка підключеного файлу скрипт
 //отримання елементу з індифікатором items
 let itemsDiv = document.getElementById("items");
 
-let itemsArray = ['газонокосарка', 'какашка ', 'бублик', 'трубка', 'вода', 'телевізор', 'кнопка ', 'ручка', 'шкаф', 'телефон', 'стілець', 'люстра', 'дзеркало']
+let itemsArray = [
+
+    {
+        firstName: "Віталій",
+        lastName: " Шатківський",
+        age: 43,
+        subject: "CS",
+        photo: "",
+        url: "",
+    },
+
+    {
+        firstName: "Наталія ",
+        lastName: " Венцель",
+        age: 18,
+        subject: "CS",
+        photo: "",
+        url: "", 
+    },
+
+
+    {
+        firstName: "Наталія",
+        lastName: " Кучер",
+        age: 18,
+        subject: "CS",
+        photo: "",
+        url: "", 
+    },
+]
 
 //перевірка існування знайденого блоку
 if (itemsDiv) {
-    itemsArray.forEach((item)=> {
-        itemsDiv.innerHTML +='<div class = items></div>'
-            }) 
+itemsArray
+.sort((a, b) => a.lastName.localeCompare(b.lastName))
+.forEach((item, index) => {
+    itemsDiv.innerHTML +=
+
+    `
+    <div class = "item">
+    <h2>Вчитель № ${index + 1} з ${itemsArray.length}</h2>
+    
+    
+    `
+})
 
 
-        }else{
+
+     // itemsArray.forEach((item) => {
+     //     itemsDiv.innerHTML += `<div class = item>${item}</div>`
+    // })
+
+
+} else {
     //вивід повідомлення про незнайдений блок
     console.log('блок товарів не знайдено')
-}
-
-
-//Визначення масиву товарів
-// let itemsArray = ['газонокосарка', 'какашка ', 'бублик', 'трубка', 'вода', 'телевізор', 'кнопка ', 'ручка', 'шкаф', 'телефон', 'стілець', 'люстра', 'дзеркало']
-
-console.log(itemsArray)
-
-
-
-// Виведемо в консоль елементів масиву
-for (let i = 0; i < itemsArray.length; i++) {
-    console.log(itemsArray[i])
 }
 
