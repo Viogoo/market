@@ -4,170 +4,102 @@ console.log('перевірка підключеного файлу скрипт
 
 
 //отримання елементу з індифікатором items
-let itemsDiv = document.getElementById("items");
+// let itemsDiv = document.getElementById("items");
 
 let itemsArray = [
-
     {
-        firstname: "Анжела",
-        lastname: "Лознюк",
-        age: "Українська мова",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/10/photo_2023-10-25_15-46-33-1.jpg",
-        pro: "Профіль",
+        "Name": "Мотокоса",
+        "sale1": 5758,
+        "sale2": 4758,
+        "photo": "img/мотокоса1.jpg",
+        "bonusSale": 5258
     },
     {
-        firstname: "Наталія",
-        lastname: "Зинюк",
-        age: "Хімія і Біологія",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2024/01/zynjuk-natalija-mykolayivna.jpg",
-        pro: "Профіль",
+        "Name": "Мотокоса",
+        "sale1": 5137,
+        "sale2": 4137,
+        "photo": "img/мотокоса2.jpg",
+        "bonusSale": 4637
     },
     {
-        firstname: "Наталія",
-        lastname: "Венцель",
-        age: "Директор",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/ventsel-nataliya-vasylivna.jpg",
-        pro: "Профіль",
+        "Name": "Мотокоса",
+        "sale1": 5985,
+        "sale2": 4985,
+        "photo": "img/бензопила1.jpg",
+        "bonusSale": 5485
     },
     {
-        firstname: "Лариса",
-        lastname: "Забелло",
-        age: "Англійська мова",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/zabello-larysa-oleksandrivna.jpg",
-        pro: "Профіль",
+        "Name": "Мотокоса",
+        "sale1": 5342,
+        "sale2": 4342,
+        "photo": "img/бензопила2.jpg",
+        "bonusSale": 4842
     },
     {
-        firstname: "Ірина",
-        lastname: "Глібко",
-        age: "Англійська мова",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/01/hlibko-iryna-anatoliyevna.jpg",
-        pro: "Профіль",
+        "Name": "Мотокоса",
+        "sale1": 5619,
+        "sale2": 4619,
+        "photo": "img/газонокосарка1.jpg",
+        "bonusSale": 5119
     },
     {
-        firstname: "Ірина",
-        lastname: "Боровська-Карандюк",
-        age: "Українська мова",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/borovska-karandyuk-iryna-anatoliyivna.jpg",
-        pro: "Профіль",
+        "Name": "Мотокоса",
+        "sale1": 5876,
+        "sale2": 4876,
+        "photo": "img/газонокосарка2.jpg",
+        "bonusSale": 5376
     },
     {
-        firstname: "Василь",
-        lastname: "Бабій",
-        age: "Фізична культура",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/babiy-vasyl-dmytrovych.jpg",
-        pro: "Профіль",
+        "Name": "Мотокоса",
+        "sale1": 5268,
+        "sale2": 4268,
+        "photo": "img/торплита1.jpg",
+        "bonusSale": 4768
     },
     {
-        firstname: "Тарас",
-        lastname: "Савінков",
-        age: "Англійська мова",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/savinkov-taras-yevhenovych.jpg",
-        pro: "Профіль",
+        "Name": "Мотокоса",
+        "sale1": 5543,
+        "sale2": 4543,
+        "photo": "img/торплита2.jpg",
+        "bonusSale": 5043
     },
-    {
-        firstname: "Марія",
-        lastname: "Медведєва",
-        age: "Географія",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/medvedyeva-mariya-vasylivna.jpg",
-        pro: "Профіль",
-    },
-    {
-        firstname: "Вікторія",
-        lastname: "Нелипович",
-        age: "Математика",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/nelypovych-viktoriya-vitaliyivna.jpg",
-        pro: "Профіль",
-    },
-    {
-        firstname: "Віталій",
-        lastname: "Шатківський",
-        age: "Інформатика",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/03/dsc07815.jpg",
-        pro: "Профіль",
-    },
-    {
-        firstname: "Іван",
-        lastname: "Севрук",
-        age: "Захист України",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/sevruk-ivan-hryhorovych.jpg",
-        pro: "Профіль",
-    },
-    {
-        firstname: "Олена",
-        lastname: "Чугунова",
-        age: "Математика",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/chuhunova-olena-vasylivna.jpg",
-        pro: "Профіль",
-    },
-    {
-        firstname: "Наталія",
-        lastname: "Гончарук",
-        age: "Англійська мова",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/honcharuk-nataliya-oleksandrivna.jpg",
-        pro: "Профіль",
-    },
-    {
-        firstname: "Діна",
-        lastname: "Варганова",
-        age: "Інформатика",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/varhanova-dina-oleksandrivna.jpg",
-        pro: "Профіль",
-    },
-    {
-        firstname: "Марія",
-        lastname: "Гетманська",
-        age: "Психолог",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/hetmanska-mariya-oleksandrivna.jpg",
-        pro: "Профіль",
-    },
-    {
-        firstname: "Наталія",
-        lastname: "Кучер",
-        age: "Фізика",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/kucher-nataliya-viktorivna.jpg",
-        pro: "Профіль",
-    },
-    {
-        firstname: "Олена",
-        lastname: "Геча",
-        age: "Історія",
-        photo: "https://lyceum.ztu.edu.ua/wp-content/uploads/2023/04/hecha-olena-anatoliyivna.jpg",
-        pro: "Профіль",
-    },
+   
   
 ]
-
-//перевірка існування знайденого блоку
-// if (itemsDiv) {
-// itemsArray
-// .sort((a, b) => a.lastName.localeCompare(b.lastName))
-// .forEach((item, index) => {
-//     itemsDiv.innerHTML +=
-if (itemsDiv){
-    itemsArray.forEach((item, index) => {
-        itemsDiv.innerHTML +=
+let itemsDiv = document.getElementById("items");
 
 
-    `
-    <div class = "item">
-             <h2>Вчитель №${index+1} з ${itemsArray.length}</h2>
-             <p>Ім'я: ${item.lastname} ${item.firstname}</p>
-             <p>Предмет: ${item.age}</p>
-             <p><img src="${item.photo}" class= "user-photo"></p>
-             <p href="https://lyceum.ztu.edu.ua/litsey/pedahohichnyy-kolektyv" class="link">${item.pro}</p>
-             </div>
-     `
-})
+itemsArray.forEach((item, index) => {
+    itemsDiv.innerHTML += 
+        `
+        <div class="item">
+                <p>${item.Name}</p>
+                <div>
+                    <img class="item-image" src="${item.photo}">
+                </div>
+                <div class="parts-pay">
+                    <div><img src="img/mololapka.png">4</div>
+                    <div><img src="img/pb.jfif">8</div>
+                </div>
+                <div class="price">
+                    <div>
+                        <span>${item.sale1}</span><sup>грн</sup>
+                        
+                        <span>${item.sale2}</span><sup>грн</sup>
+                    </div>
+                </div>
+
+                <div class="bonus">
+                    <div>Ціна за купоном</div>
+                    <div >
+                        <span class="bonus-div">${item.bonusSale} </span>
+                        <sup>грн</sup>
+                    </div>
+                    
+                    
+                </div>
 
 
-
-     // itemsArray.forEach((item) => {
-     //     itemsDiv.innerHTML += `<div class = item>${item}</div>`
-    // })
-
-
-} else {
-    //вивід повідомлення про незнайдений блок
-    console.log('блок товарів не знайдено')
-}
-
+            </div>
+        `;
+});
